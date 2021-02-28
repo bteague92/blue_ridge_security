@@ -166,8 +166,8 @@ const Contact = () => {
           <p>PO Box 1716</p>
           <p>Taylorsville, NC</p>
           <p>US</p>
-          <p>Phone: <a>8283583228</a></p>
-          <p>Email: <a>services@blueridgenc.net</a></p>
+          <p>Phone: <a href="/">8283583228</a></p>
+          <p>Email: <a href="/">services@blueridgenc.net</a></p>
         </address>
       </div>
     </Container>
