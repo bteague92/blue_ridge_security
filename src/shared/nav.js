@@ -63,7 +63,7 @@ const Nav = () => {
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/services">Services</Link>
-        <Link to="/church">Church</Link>
+        {/* <Link to="/church">Church</Link> */}
         <Link to="/contact">Contact</Link>
       </div>
     </Container>

@@ -5,12 +5,20 @@ const Container = styled.div`
   width: 100%;
   display: flex;
 
+  @media(max-width: 768px){
+    flex-direction: column;
+  }
+
 
   .contact-form{
     margin: 30px 0;
     width: 50%;
     display: flex;
     flex-direction: column;
+
+    @media(max-width: 768px){
+      width: 100%;
+    }
 
     form{
       width: 100%;
@@ -51,6 +59,10 @@ const Container = styled.div`
 
   .info{
     width: 50%;
+
+    @media(max-width: 768px){
+      width: 100%;
+    }
 
     h1{
       color: white;
