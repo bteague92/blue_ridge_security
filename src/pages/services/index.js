@@ -61,7 +61,10 @@ const Container = styled.div`
           }
 
           h5 {
-            display: none;
+            display: block;
+            color: white;
+            text-align: center;
+            font-size: 1rem;
           }
 
           a {
@@ -94,18 +97,16 @@ const Container = styled.div`
         }
 
         h5 {
-          color: white;
-          text-align: center;
-          font-size: 1rem;
+          display: none;
         }
 
         a {
           display: none;
           background: white;
           color: black;
-          padding: 10px;
+          padding: 5px;
           border-radius: 10px;
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           text-decoration: none;
           font-weight: 900;
         }
@@ -117,85 +118,34 @@ const Container = styled.div`
 const Services = () => {
   const services = [
     {
-      name: "Corporate Security",
+      name: "Security Guard Services",
       description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
-    },
-
-    {
-      name: "Security Audits",
-      description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
+        "BRSC doesn't just consult, we serve. Are you interested in feelings of safety and being in a secure environment where threats to harm are handled by trained professionals? If so then look no further than BRSC security guard services. The national average of police response time is 14-16 minutes. This is good and we thank our police for their dedication and service. But if a threat looms at the door of your business or church, having trained guards to assess and handle the situation can waylay dangers and give you safety in those precarious 14-16 minutes.",
     },
     {
-      name: "Security Assessment",
+      name: "Security Operations Training",
       description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
+        "Are you the type of person who wants to have a safe environment and people around who know what to do in an emergency rather than panic? Do you have people willing and ready to step up to a threat to your business, church or school? Then consider Security Operations Training from BRSC where we will teach you how to properly assess a threat, respond to a variety of emergency situations and direct others in a safe manner.",
     },
     {
-      name: "Training",
+      name: "Security Assessments",
       description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
+        "How safe is your home? How easy would it be for a burglar to enter your business in the middle of the night? Would you like these questions and more answered? Contact BRSC for a Security Assessment and security professionals will assess the premises and give you feedback on the matter, suggestions for improvements and let you know what works well.",
     },
     {
       name: "Investigative Services",
       description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
+        "Are you troubled by something, have an unsolved problem that needs a delicate touch? BRSC offers discrete, professional investigative services to help you find the answers.",
     },
     {
-      name: "Work Place Violence Awareness",
+      name: "Awareness and Preparedness",
       description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
+        "What do you do when you see two people break out in a fight? If a flash flood hits and water pours in how would you respond? BRSC offers training on a variety of topics to raise awareness and help you be prepared to handle the situation in a level-headed manner. Topics include but are not limited too: physical violence, sexual assault, active shooters, natural disasters and emergency response.",
     },
     {
-      name: "Disaster Preparedness",
+      name: "Video Surveillance & Alarm Systems",
       description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
-    },
-    {
-      name: "Executive Protection Services",
-      description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
-    },
-    {
-      name: "Video Surveillance",
-      description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
-    },
-    {
-      name: "Alarm Systems",
-      description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
-    },
-    {
-      name: "Security Guard Services",
-      description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
-    },
-    {
-      name: "Patrol Services",
-      description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
-    },
-    {
-      name: "Active Shooter Response",
-      description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
-    },
-    {
-      name: "Team Building Services",
-      description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
-    },
-    {
-      name: "Emergency Response",
-      description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
-    },
-    {
-      name: "Church Security Services",
-      description:
-        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
+        "Looking for more security around the clock? BRSC offers sales and installation services of video surveillance equipment and alarm security systems. Get peace of mind knowing that your home, business or church is well equipped with tools designed to protect you in the event of a break in or burglary.",
     },
   ];
 

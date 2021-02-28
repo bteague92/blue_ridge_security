@@ -6,11 +6,12 @@ import Control from "../../assets/control.jpg";
 import Logo from "../../assets/logo3.png";
 
 const Container = styled.div`
-  max-width: 1440px;
+  width: 100vw;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   ::-webkit-scrollbar {
     display: none;
   }
@@ -24,6 +25,11 @@ const Container = styled.div`
     h1 {
       color: white;
       margin: 30px 0;
+      text-align: center;
+
+      @media(max-width: 768px){
+        font-size: 1.6rem;
+      }
     }
 
     img {
@@ -300,6 +306,10 @@ const Container = styled.div`
       font-size: 1.5rem;
       color: white;
       text-align: center;
+
+      @media(max-width: 768px){
+        font-size: 1.2rem;
+      }
     }
   }
 
@@ -307,11 +317,16 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin: 70px 0;
+    margin: 40px 0;
     img {
-      width: 250px;
-      height: 250px;
+      width: 20vw;
+      height: 20vw;
       border-radius: 10px;
+
+      @media(max-width: 768px){
+        width: 28vw;
+        height: 28vw;
+      }
 
       &:hover {
         border: 2px solid white;
