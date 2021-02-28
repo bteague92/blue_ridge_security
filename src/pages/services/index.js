@@ -1,6 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Surveillance from "../../assets/surveillance.jpg";
+import Training from "../../assets/security_guard_training.jpg";
+import GuardServices from "../../assets/security_guard_services.jpg";
+import Assessments from "../../assets/security_assessment.jpg";
+import Preparedness from "../../assets/awareness_and_preparedness.jpg";
+import Investigative from "../../assets/investigative_services.jpg"
 
 const Container = styled.div`
   max-width: 1440px;
@@ -47,6 +53,7 @@ const Container = styled.div`
 
       &:hover {
         .overlay {
+          justify-content: space-between;
           @keyframes fadeIn {
             0% {
               opacity: 0%;
@@ -121,31 +128,37 @@ const Services = () => {
       name: "Security Guard Services",
       description:
         "BRSC doesn't just consult, we serve. Are you interested in feelings of safety and being in a secure environment where threats to harm are handled by trained professionals? If so then look no further than BRSC security guard services. The national average of police response time is 14-16 minutes. This is good and we thank our police for their dedication and service. But if a threat looms at the door of your business or church, having trained guards to assess and handle the situation can waylay dangers and give you safety in those precarious 14-16 minutes.",
+      image: GuardServices
     },
     {
       name: "Security Operations Training",
       description:
         "Are you the type of person who wants to have a safe environment and people around who know what to do in an emergency rather than panic? Do you have people willing and ready to step up to a threat to your business, church or school? Then consider Security Operations Training from BRSC where we will teach you how to properly assess a threat, respond to a variety of emergency situations and direct others in a safe manner.",
+      image: Training
     },
     {
       name: "Security Assessments",
       description:
         "How safe is your home? How easy would it be for a burglar to enter your business in the middle of the night? Would you like these questions and more answered? Contact BRSC for a Security Assessment and security professionals will assess the premises and give you feedback on the matter, suggestions for improvements and let you know what works well.",
+      image: Assessments
     },
     {
       name: "Investigative Services",
       description:
         "Are you troubled by something, have an unsolved problem that needs a delicate touch? BRSC offers discrete, professional investigative services to help you find the answers.",
+      image: Investigative
     },
     {
       name: "Awareness and Preparedness",
       description:
         "What do you do when you see two people break out in a fight? If a flash flood hits and water pours in how would you respond? BRSC offers training on a variety of topics to raise awareness and help you be prepared to handle the situation in a level-headed manner. Topics include but are not limited too: physical violence, sexual assault, active shooters, natural disasters and emergency response.",
+      image: Preparedness
     },
     {
       name: "Video Surveillance & Alarm Systems",
       description:
         "Looking for more security around the clock? BRSC offers sales and installation services of video surveillance equipment and alarm security systems. Get peace of mind knowing that your home, business or church is well equipped with tools designed to protect you in the event of a break in or burglary.",
+      image: Surveillance
     },
   ];
 
@@ -163,7 +176,7 @@ const Services = () => {
             <div className="service">
               <img
                 alt={i.name}
-                src="https://picsum.photos/seed/picsum/200/300"
+                src={i.image}
               />
               <div className="overlay">
                 <h2>{i.name}</h2>
