@@ -27,7 +27,7 @@ const Container = styled.div`
       font-size: 3rem;
     }
 
-    h4 {
+    h2 {
       color: white;
       text-align: center;
       font-size: 2rem;
@@ -164,16 +164,16 @@ const Services = () => {
 
   return (
     <Container>
-      <div className="header">
+      <header className="header" role="banner">
         <h1>Our Services</h1>
-        <h4>
+        <h2>
           Here are some of the professional services we provide for our clients:
-        </h4>
-      </div>
-      <div className="services">
+        </h2>
+      </header>
+      <section className="services" role="main">
         {services.map((i) => {
           return (
-            <div className="service">
+            <article className="service">
               <img
                 alt={i.name}
                 src={i.image}
@@ -183,10 +183,10 @@ const Services = () => {
                 <h5>{i.description}</h5>
                 <Link to="/contact">Learn More</Link>
               </div>
-            </div>
+            </article>
           );
         })}
-      </div>
+      </section>
     </Container>
   );
 };

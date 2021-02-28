@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.div``;
+const Container = styled.footer``;
 
 const Footer = () => {
   return (
-    <Container>
+    <Container role="contentinfo">
       <h1>Footer</h1>
     </Container>
   );

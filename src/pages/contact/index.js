@@ -108,7 +108,7 @@ const Contact = () => {
   }
   return (
     <Container>
-      <div className="contact-form">
+      <section className="contact-form" role="main">
         <form onSubmit={handleSubmit}>
           <h1>Contact Us</h1>
           <label htmlFor="first_name">First Name</label>
@@ -159,8 +159,8 @@ const Contact = () => {
             onChange={handleChange}
           />
         </form>
-      </div>
-      <div className="info">
+      </section>
+      <section className="info" role="complementary">
         <h1>Address:</h1>
         <address>
           <p>PO Box 1716</p>
@@ -169,7 +169,7 @@ const Contact = () => {
           <p>Phone: <a href="/">8283583228</a></p>
           <p>Email: <a href="/">services@blueridgenc.net</a></p>
         </address>
-      </div>
+      </section>
     </Container>
   );
 };

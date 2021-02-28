@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Logo from "../assets/logo3.png";
 import { Link } from "react-router-dom";
 
-const Container = styled.div`
+const Container = styled.nav`
   width: 100%;
   height: 80px;
   background: black;
@@ -56,7 +56,7 @@ const Container = styled.div`
 
 const Nav = () => {
   return (
-    <Container>
+    <Container role="navigation">
       <div className="logo">
         <img alt="logo" src={Logo} />
       </div>

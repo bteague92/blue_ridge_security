@@ -338,11 +338,11 @@ const Container = styled.div`
 const Home = () => {
   return (
     <Container>
-      <div className="logo">
+      <header className="logo" role="banner">
         <img alt="logo" src={Logo} />
         <h1>Blue Ridge Security Consultants</h1>
-      </div>
-      <section className="about">
+      </header>
+      <section className="about" role="main">
         <p>
           Blue Ridge Security Consultants is here to aid you in your efforts to
           bring security and safety to your family, business, church, etc. On
@@ -350,7 +350,7 @@ const Home = () => {
           from setting up video surveillance to responding to an active shooter.
         </p>
       </section>
-      <section className="images">
+      <section className="images" role="complementary">
         <img alt="Members at shooting range" src={Range} />
         <img alt="Members at shooting course" src={Course} />
         <img alt="Crowd control" src={Control} />
