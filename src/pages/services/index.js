@@ -25,12 +25,13 @@ const Container = styled.div`
       color: white;
       text-align: center;
       font-size: 3rem;
+      margin: 0 0 30px 0;
     }
 
     h2 {
       color: white;
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -42,8 +43,9 @@ const Container = styled.div`
     .service {
       border-radius: 8px;
       width: 400px;
-      height: 250px;
+      height: 300px;
       margin: 20px 0;
+      border: 1px solid grey;
 
       img {
         border-radius: 8px;
@@ -67,7 +69,7 @@ const Container = styled.div`
             display: none;
           }
 
-          h5 {
+          p {
             display: block;
             color: white;
             text-align: center;
@@ -83,12 +85,13 @@ const Container = styled.div`
       }
 
       .overlay {
+        border-radius: 8px;
         animation-name: fade;
         animation-duration: 0.5s;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.6);
         position: relative;
         left: 0;
-        top: -254px;
+        top: -302px;
         width: 100%;
         height: 100%;
         display: flex;
@@ -103,7 +106,7 @@ const Container = styled.div`
           font-size: 2rem;
         }
 
-        h5 {
+        p {
           display: none;
         }
 
@@ -165,7 +168,7 @@ const Services = () => {
   return (
     <Container>
       <header className="header" role="banner">
-        <h1>Our Services</h1>
+        <h1>Our Services:</h1>
         <h2>
           Here are some of the professional services we provide for our clients:
         </h2>
@@ -175,12 +178,12 @@ const Services = () => {
           return (
             <article className="service">
               <img
-                alt={i.name}
+                alt={i.name + " image"}
                 src={i.image}
               />
               <div className="overlay">
                 <h2>{i.name}</h2>
-                <h5>{i.description}</h5>
+                <p>{i.description}</p>
                 <Link to="/contact">Learn More</Link>
               </div>
             </article>

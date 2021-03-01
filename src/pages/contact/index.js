@@ -80,6 +80,12 @@ const Container = styled.div`
       p{
         color: white;
         font-size: 1.5rem;
+
+        a{
+          color: skyblue;
+          text-decoration: none;
+          font-family: Garamond, serif;
+        }
       }
     }
   }
@@ -166,8 +172,8 @@ const Contact = () => {
           <p>PO Box 1716</p>
           <p>Taylorsville, NC</p>
           <p>US</p>
-          <p>Phone: <a href="/">8283583228</a></p>
-          <p>Email: <a href="/">services@blueridgenc.net</a></p>
+          <p style={{ margin: "10px" }}>Phone: <a href="tel:8283583228">828-358-3228</a></p>
+          <p style={{ margin: "10px" }}>Email: <a href="mailto:services@blueridgenc.net">services@blueridgenc.net</a></p>
         </address>
       </section>
     </Container>
